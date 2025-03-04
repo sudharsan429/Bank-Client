@@ -1,0 +1,195 @@
+/* App.css */
+
+/* Body styling */
+body {
+  margin: 0;
+  padding: 0;
+  font-family:'Times New Roman', Times, serif;
+  background-color: #f4f4f4;
+}
+
+#home{
+}
+
+/* Navbar Styling */
+#header {
+  overflow: hidden;
+  background-color: #45a049;
+  padding: 20px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding-right: 20px; /* Add spacing to the right of the navbar */
+}
+
+#head {
+  color: rgb(24, 87, 168);
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-left: 10px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+
+/* Logo Styling */
+.img1 {
+  height: 40px;
+  width: auto;
+  margin-left: 10px;
+}
+
+/* Navbar container for alignment */
+.nav {
+  flex-grow: 1;
+  display: flex;
+  font-family: 'Times New Roman', Times, serif;
+  margin-left: 23%;
+}
+
+/* Styling for Navbar Links */
+#nav-bar {
+  color: black;
+  margin-right: 20px;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+  font-size: 16px;
+ font-weight: bold;
+}
+
+#nav-bar:hover {
+  color: aqua;
+  text-decoration: none;
+  border-bottom: 2px solid blue;
+  border-radius: 20%;
+}
+
+/* Sign In button */
+
+/* Add space below the navbar */
+.br-navbar-spacing {
+  margin-top: 70px; /* Adjust based on navbar height */
+}
+
+/* General styles */
+#carousel {
+  margin: 0;
+  font-family:'Times New Roman', Times, serif;
+  background-color: #4e4c4c;
+  margin-top: 5%;
+  min-height: 89.5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Carousel Container */
+.carousel-container {
+  width: 50%;
+  max-width: 600px; /* Prevents it from becoming too large */
+  padding: 20px;
+  margin: 6% auto; /* Centers it properly */
+  margin-left: 5%;
+}
+
+#wel {
+  margin-right: 13%;
+  font-size: 100px;
+  font-weight: bold;
+  text-transform: uppercase; /* Makes text uppercase for a bold look */
+  background: linear-gradient(45deg, aqua, blue); /* Gradient color effect */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; /* Makes text take gradient color */
+  text-align: center;
+  animation: fadeIn 2s ease-in-out; /* Adds fade-in effect */
+  text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3); /* Soft shadow */
+}
+
+
+
+/* Individual Slide */
+.slide {
+  position: relative;
+  text-align: center;
+}
+
+/* Slide Images */
+.slide img {
+  width: 100%;
+  max-height: 400px; /* Prevents extra-large images */
+  object-fit: cover; /* Ensures images fit well */
+  border-radius: 100px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Image Caption */
+.caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: blue;
+  font-size: 24px;
+  font-weight: bold;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+
+
+/* Slick Carousel Navigation Arrows */
+.slick-prev, .slick-next {
+  font-size: 24px;
+  z-index: 10;
+  color: black;
+}
+
+/* Slick Dots */
+.slick-dots li button:before {
+  color: black;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .carousel-container {
+    width: 90%;
+    margin-top: 5%;
+  }
+  .slide img {
+    max-height: 300px; /* Reduce image height for smaller screens */
+  }
+  .caption {
+    font-size: 18px;
+    padding: 8px 16px;
+  }
+}
+
+/* Welcome Text Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design for Welcome Text */
+@media screen and (max-width: 768px) {
+  #wel {
+    font-size: 60px; /* Reduce font size on smaller screens */
+    margin-right: 0;
+    text-align: center;
+  }
+}

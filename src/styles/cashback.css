@@ -1,0 +1,191 @@
+/* General Styles for the Deposit Component */
+
+#cashback{
+    overflow-x: hidden;
+    background-image: url("../images/bg.jpg"); /* Replace with your own background image */
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+
+#cashback h1 {
+    font-size: 25px;
+    text-align: center;
+    color: blue;
+    font-family: 'Times New Roman', Times, serif;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    text-transform: uppercase;   
+    font-weight: bold;
+    padding-top: 8%;
+}
+
+/* Form styling */
+#cashback form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 28px;
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.2);
+    max-width: 380px;
+    margin: 0 auto;
+    width: 100%;
+    animation: fadeIn 1s ease-in-out;
+}
+
+
+
+#cashback form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    background-color: #f9f9f9;
+    color: #333;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#cashback form input:focus {
+    border-color: #4CAF50;
+    outline: none;
+    box-shadow: 0 0 8px rgba(76, 175, 80, 0.6);
+}
+
+#cashback label{
+    font-family: 'Times New Roman', Times, serif;
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#amt{
+    margin-right: 35%;
+
+}
+
+#p{
+    margin-right: 60%;
+}
+
+#cashback select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    background-color: #f9f9f9;
+    color: #333;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+/* Submit button styling */
+#cashback form button {
+    background-color: blue;
+    color: white;
+    padding: 9px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: background-color 0.3s ease;
+    width: 85%;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 2%;
+}
+
+#cashback form button:hover {
+    background-color: #4CAF50;
+}
+
+/* Balance display */
+#cashback h2 {
+    font-size: 26px;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 20px;
+}
+
+/* Media Query for Smaller Screens */
+@media (max-width: 768px) {
+    #cashback h1 {
+        font-size: 28px;
+    }
+
+    #cashback form input {
+        font-size: 14px;
+    }
+
+    #cashback form button {
+        font-size: 16px;
+    }
+
+    #cashback h2 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    #cashback h1 {
+        font-size: 24px;
+    }
+
+    #cashback form {
+        padding: 15px;
+    }
+
+    #cashback form input {
+        font-size: 12px;
+    }
+
+    #cashback form button {
+        font-size: 14px;
+        padding: 12px 18px;
+    }
+
+    #cashback h2 {
+        font-size: 18px;
+    }
+}
+
+/* Styles for the message */
+.message {
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 20px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    color:white;
+  }
+  
+  /* Success message styles */
+  .message.success {
+    background-color: #28a745; /* Green */
+    color: white;
+    border: 1px solid #218838; /* Darker green */
+  }
+  
+  /* Error message styles */
+  .message.error {
+    background-color: #dc3545; /* Red */
+    color: white;
+    border: 1px solid #c82333; /* Darker red */
+  }
+  
+  /* Info message styles (optional, for general messages) */
+  .message.info {
+    background-color: #17a2b8; /* Blue */
+    color: white;
+    border: 1px solid #138496; /* Darker blue */
+  }
+  

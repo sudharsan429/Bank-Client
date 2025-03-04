@@ -1,0 +1,226 @@
+/* General Styling */
+#alldata{
+    background-image: url("../images/bg.jpg"); /* Replace with your own background image */
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+
+#alldata h1 {
+    font-size: 25px;
+    text-align: center;
+    color: blue;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 30px;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    padding-top: 8%;
+}
+
+/* Table Styling */
+#alldata .table {
+    width: 90%;
+    margin-left: 5%;
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+    font-family: 'Arial', sans-serif;
+    animation: fadeIn 1s ease-in-out;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.2);
+    
+}
+
+#alldata .table th, .table td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+#alldata .table th {
+    background-color: rgb(0, 0, 4);
+    color: white;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#alldata .table td {
+    background-color: #f9f9f9;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+}
+
+#alldata .table button {
+    padding: 8px 16px;
+    margin: 5px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color:blue;
+    color: white;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+#alldata .table button:hover {
+    background-color: #4CAF50;
+}
+
+#alldata .table button:focus {
+    outline: none;
+}
+
+/* Form Styling for Editing User */
+#alldata div {
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 12px;
+    box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.1);
+}
+
+#alldata{
+    padding: 3%;
+}
+
+#alldata h2 {
+    font-size: 28px;
+    text-align: center;
+    color:blue;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 20px;
+}
+
+#alldata input {
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    background-color: rgb(97, 138, 171);
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#alldata input:focus {
+    border-color: #4CAF50;
+    outline: none;
+    box-shadow: 0 0 8px rgba(76, 175, 80, 0.6);
+}
+
+/* Update and Cancel Button Styling */
+#alldata button {
+    padding: 7px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+    width: 48%;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 5px 1%;
+    margin-left: 25%;
+}
+
+#alldata button:hover {
+    background-color: blue;
+}
+
+#alldata button:focus {
+    outline: none;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    #alldata h1 {
+        font-size: 28px;
+    }
+
+    #alldata .table th, .table td {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    #alldata input {
+        font-size: 14px;
+    }
+
+    #alldata button {
+        font-size: 16px;
+        padding: 12px 18px;
+    }
+
+    #alldata h2 {
+        font-size: 24px;
+    }
+}
+
+/* For Small Tablets and Large Mobile Devices */
+@media (max-width: 768px) {
+    #alldata h1 {
+        font-size: 26px;
+    }
+
+    #alldata .table {
+        font-size: 12px;
+    }
+
+    #alldata .table th, .table td {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    #alldata div {
+        padding: 15px;
+    }
+
+    #alldata input {
+        font-size: 14px;
+    }
+
+    #alldata button {
+        font-size: 14px;
+        padding: 10px 14px;
+    }
+
+    #alldata h2 {
+        font-size: 22px;
+    }
+}
+
+/* For Mobile Devices */
+@media (max-width: 480px) {
+    #alldata h1 {
+        font-size: 24px;
+    }
+
+    #alldata .table {
+        font-size: 10px;
+    }
+
+    #alldata .table th, .table td {
+        font-size: 10px;
+        padding: 6px;
+    }
+
+    #alldata div {
+        padding: 10px;
+    }
+
+    #alldata input {
+        font-size: 12px;
+    }
+
+    #alldata button {
+        font-size: 12px;
+        padding: 8px 12px;
+        width: 100%; /* Make buttons take full width on mobile */
+    }
+
+    #alldata h2 {
+        font-size: 20px;
+    }
+}

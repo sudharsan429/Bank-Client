@@ -1,0 +1,170 @@
+/* Body styling */
+#register {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+    background-image: url("../images/bg.jpg"); /* Replace with your own background image */
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+  }
+  
+  /* General Styling for Register Form */
+  #register h1 {
+    text-align: center;
+    margin-top: 8%;
+    font-weight: bold;
+    color: blue;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    font-family: 'Times New Roman', Times, serif;
+    padding-bottom: 1%;
+    text-transform: uppercase;   
+    font-size: 25px;
+
+  }
+  
+  /* Form Styling */
+  #register form {
+    max-width: 400px;
+    margin: 0 auto;
+    margin-bottom: 2%;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1s ease-in-out;
+    box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.2);
+  }
+  
+  #register form:hover {
+    transform: scale(1.02); /* Slightly scale up the form for hover effect */
+  }
+  
+  /* Form Labels */
+  #register .form-label {
+    font-size: 1rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 8px;
+    transition: color 0.3s ease;
+  }
+  
+  #register .form-label:hover {
+    color: orange; /* Change label color on hover */
+  }
+  
+  #register input{
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+  /* Input Fields */
+  #register .form-control {
+    margin-bottom: 15px;
+    font-size: 1rem;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+    background-color: #fafafa;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  /* Input Focus Styling */
+  #register .form-control:focus {
+    border-color: #45a049;
+    box-shadow:greenyellow ;
+    background-color: #eaf4ff; /* Light blue background on focus */
+  }
+  
+  /* Button Styling */
+  #register .btn-primary {
+    background-color: blue;
+    border: none;
+    color: white;
+    padding: 8px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  #register .btn-primary:hover {
+    background-color: #4CAF50;
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
+  }
+  
+  /* Button Disabled State */
+  #register .btn-primary:disabled {
+    background-color: #aaa;
+    cursor: not-allowed;
+  }
+  
+  /* Register Form Footer (Optional) */
+  #register .register-footer {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 1rem;
+  }
+  
+  #register .register-footer a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  #register .register-footer a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive Styles for Mobile */
+  @media (max-width: 768px) {
+    /* Center the form and reduce padding on mobile */
+    #register h1 {
+      font-size: 2rem;
+      margin-top: 30px;
+    }
+  
+    #register form {
+      padding: 15px;
+      max-width: 90%; /* Make the form wider on mobile */
+    }
+  
+    #register .form-control {
+      font-size: 0.9rem; /* Slightly smaller text for input fields on mobile */
+      padding: 12px; /* Increase padding for touch-friendliness */
+    }
+  
+    #register .btn-primary {
+      font-size: 1rem; /* Adjust button font size */
+      padding: 12px; /* Larger button padding for easy clicking */
+    }
+  
+    #register .register-footer {
+      font-size: 0.9rem; /* Smaller footer text */
+    }
+  }
+  
+  /* Further mobile tweaks for very small devices */
+  @media (max-width: 480px) {
+    /* Smaller font size for headers */
+    #register h1 {
+      font-size: 1.8rem;
+      margin-top: 20px;
+    }
+  
+    #register .form-control {
+      font-size: 0.85rem; /* Further reduce font size for inputs */
+      padding: 10px; /* Adjust padding for small screens */
+    }
+  
+    #register .btn-primary {
+      font-size: 0.9rem; /* Smaller button font size */
+      padding: 10px; /* Adjust button padding for small screens */
+    }
+  }
+  
+
+  
